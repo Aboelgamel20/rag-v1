@@ -23,3 +23,14 @@ $ conda create -n mini-rag-app
 $ conda activate mini-rag-app
 ```
 
+### To install the required packages simply run this command:
+```bash
+$ pip install -r requirments.txt
+```
+
+## (Optional)
+
+### Setup your command line for better readability using this command:
+``` bash
+export PS1="\[\033[01;32m\]\u@\h:\w\n\[\033[00m\]\$ "
+```
