@@ -1,7 +1,7 @@
 from fastapi import FastAPI
+from dotenv import load_dotenv
+load_dotenv('.env')
+from routes import base
 
 app = FastAPI()
-
-@app.get('/welcome')
-def welcome():
-    return "welcome to the first trial of the program."
+app.include_router(base.base_router)
